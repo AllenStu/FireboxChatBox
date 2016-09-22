@@ -54,14 +54,5 @@ app.controller('chatController', ['$scope', 'Message', 'appService',
 			
 }]);
 	
-app.service('appService', function() {
-     var name;
-     var setName = function (inputName){
-    	 name=inputName;
-     };
-     var getName = function(){
-    	 return name;
-     };
-     return {setName: setName, getName : getName};
-});
+
 
