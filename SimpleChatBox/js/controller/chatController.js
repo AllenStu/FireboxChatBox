@@ -54,22 +54,6 @@ app.controller('chatController', ['$scope', 'Message', 'appService',
 			
 }]);
 	
-app.factory('Message', ['$firebase',
- 	    function($firebase){
-			
-			var ref = new Firebase('https://chikka-chatbox.firebaseio.com'); //get the http or databaseURL
-			var messages = $firebase(ref.child('messages').limitToLast(10)).$asArray();
-			
-			var Message = {
-				all: messages,
-				create: function (message) {
-					return messages.$add(message);
-				}
-			};
-		
-		return Message;
-}]);
-
 app.service('appService', function() {
      var name;
      var setName = function (inputName){
