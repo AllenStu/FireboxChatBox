@@ -5,14 +5,14 @@ app.config(function($routeProvider) {
 	.when('/', {
 		templateUrl : 'pages/chooseUser.html',
 		controller : 'chatController',
-		css : ['css/myCSS.css','css/secondPageStyle.css']
+		
 	})
 
 	// route for the chat Room
 	.when('/ChatBox', {
 		templateUrl : 'pages/chatRoom.html',
 		controller : 'chatController',
-		css : ['css/myCSS.css','css/secondPageStyle.css']
+		
 	})
 	// route for the chat Room
 	.when('/Home', {
