@@ -1,0 +1,14 @@
+<div class="login-page">
+	<div class="form">
+		<form class="login-form">
+			<p>Welcome to ChikkaChat, please choose your username.</p>
+			<input type="text" ng-model="inputName" ng-init="inputName = user"/> <a href="#ChatBox"
+				class="button" ng-click="assignName(inputName)">
+				<button>SUBMIT</button>
+			</a>
+		</form>
+		<p>
+			Hi <b>{{ inputName }} </b>!
+		</p>
+	</div>
+</div>
